@@ -1,6 +1,8 @@
 #!/usr/bin/ruby
 #
-# reference: https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase
+# Wipeout - Fast, secure, interactive disk erase utility
+#
+# Latest version here: https://github.com/courtney-rosenthal/wipeout
 #
 
 # Pattern that will match the device once it's connected to the system.

@@ -12,9 +12,11 @@ Features include:
 * Fast. (My test 240GB SSD completes in less than a minute.)
 
 
-This web page has good information on the ATA Secure Erase feature:
-
+Information on the ATA Secure Erase feature here: 
 https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase
+
+Latest version of this utility here: https://github.
+com/courtney-rosenthal/wipeout
 
 ## Instructions
 
@@ -57,3 +59,9 @@ Here is an example run:
 
     Confirming wipe was successful ... stand by ~30 seconds ...
     Wipe is successful!
+
+<address>
+---<br />
+Courtney Rosenthal<br />
+cr@crosenthal.com
+</address>
