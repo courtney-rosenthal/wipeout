@@ -41,6 +41,11 @@ Here is an example run:
       Units: sectors of 1 * 512 = 512 bytes
       Sector size (logical/physical): 512 bytes / 512 bytes
       I/O size (minimum/optimal): 512 bytes / 512 bytes
+      Disklabel type: dos
+      Disk identifier: 0x997b5757
+      
+      Device     Boot Start       End   Sectors   Size Id Type
+      /dev/sdc1        2048 468862127 468860080 223.6G 83 Linux
 
     THIS DEVICE IS ABOUT TO BE COMPLETELY ERASED !!!
     Proceed to erase /dev/sdc? (yes/no) : yes
