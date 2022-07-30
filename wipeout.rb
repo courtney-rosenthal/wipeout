@@ -31,9 +31,7 @@ end
 
 
 #
-# acquireDevice - wait for a device to be inserted
-#
-# Returns path of the device that was inserted
+# acquireDevice - wait for a device to be inserted, returns path of the device
 #
 def acquireDevice
   devicesBefore = Dir.glob(PATTERN_DEV)
@@ -59,7 +57,6 @@ end
 # getHdParamInfo - get info from a device with the "hdparam" command
 #
 # Returns a list of lines output by the command, with spaces collapsed and trimmed.
-# Throws an exception of command fails.
 #
 def getHdParamInfo(dev)
   output = `hdparm -I #{dev}`
@@ -108,9 +105,7 @@ end
 
 
 #
-# confirmWipe - confirm user wants to perform secure erase on this device
-#
-# Displays current partition table then prompts for yes/no response.
+# confirmWipe - display current partition table then prompt user for yes/no response to start wipe
 #
 def confirmForWipe(dev)
   puts ""
@@ -136,7 +131,10 @@ end
 # performWipe - perform ATA secure erase on a device
 #
 def performWipe(dev)
+
+  # The password doesn't need to be secret. It's only going to live for the duration of the wipe.
   pass="secretPassword"
+
   puts ""
 
   runCommand("hdparm --user-master u --security-set-pass #{pass} #{dev}")
@@ -159,8 +157,6 @@ end
 #
 # runCommand - run a command
 #
-# Displays a command to run, runs it, then checks exit status.
-#
 def runCommand(cmd)
   puts("+ #{cmd}")
   system(cmd)
@@ -173,8 +169,7 @@ end
 #
 # verifyWipe - verify that a device has been wiped
 #
-# This is done by verifying that the first 500MB of the device
-# is all zeroes.
+# Read back the first WIPE_CHECK_MB of the drive and ensure it is all zeroes.
 #
 def verifyWipe(dev)
   puts ""
