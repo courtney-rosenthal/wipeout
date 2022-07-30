@@ -15,8 +15,7 @@ Features include:
 Information on the ATA Secure Erase feature here: 
 https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase
 
-Latest version of this utility here: https://github.
-com/courtney-rosenthal/wipeout
+Latest version of this utility here: https://github.com/courtney-rosenthal/wipeout
 
 ## Instructions
 
