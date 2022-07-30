@@ -19,17 +19,19 @@ Latest version of this utility here: https://github.com/courtney-rosenthal/wipeo
 
 ## Instructions
 
-* Initially device (hard drive) is not connected to the system.
-* Start up the program with _root_ privileges.
+* Initially device (hard drive) is disconnected from the system.
+* Start _wipeout_ with _root_ privileges.
 * Connect the hard drive to the system.
 * Wait a few seconds for the device to be recognized.
-* Confirm the erase can proceed.
+* When propmpted, confirm the erase.
+
+## Example
 
 Here is an example run:
 
     $ sudo ./wipeout.rb
 
-    Insert drive now .......... done!
+    Searching ... connect drive now .......... done!
     Detected device = /dev/sdc
       Model Number: INTEL SSDSC2CW240A3
       Estimated erase time: 4min
@@ -64,8 +66,6 @@ Here is an example run:
     Confirming wipe was successful ... stand by ~30 seconds ...
     Wipe is successful!
 
-<address>
----<br />
-Courtney Rosenthal<br />
-cr@crosenthal.com
-</address>
+## Author
+
+Courtney Rosenthal &lt;cr@crosenthal.com&gt;

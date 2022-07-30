@@ -31,11 +31,11 @@ end
 
 
 #
-# acquireDevice - wait for a device to be inserted, returns path of the device
+# acquireDevice - wait for a device to be connected, returns path of the device
 #
 def acquireDevice
   devicesBefore = Dir.glob(PATTERN_DEV)
-  print "Insert drive now .."
+  print "Searching ... connect drive now .."
   loop do
     print "."
     sleep 1
