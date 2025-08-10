@@ -23,7 +23,7 @@ Latest version of this utility here: https://github.com/courtney-rosenthal/wipeo
 * Start _wipeout_ with _root_ privileges.
 * Connect the hard drive to the system.
 * Wait a few seconds for the device to be recognized.
-* When propmpted, confirm the erase.
+* When prompted, confirm the erase.
 
 ## Example
 
